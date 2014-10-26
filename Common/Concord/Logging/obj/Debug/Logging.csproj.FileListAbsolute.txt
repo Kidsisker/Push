@@ -1,0 +1,11 @@
+C:\!Development\Push\Dev\Common\Concord\Logging\bin\Debug\Concord.Logging.dll.config
+C:\!Development\Push\Dev\Common\Concord\Logging\bin\Debug\Concord.Logging.dll
+C:\!Development\Push\Dev\Common\Concord\Logging\bin\Debug\Concord.Logging.pdb
+C:\!Development\Push\Dev\Common\Concord\Logging\bin\Debug\Elmah.dll
+C:\!Development\Push\Dev\Common\Concord\Logging\bin\Debug\EntityFramework.dll
+C:\!Development\Push\Dev\Common\Concord\Logging\bin\Debug\EntityFramework.SqlServer.dll
+C:\!Development\Push\Dev\Common\Concord\Logging\bin\Debug\EntityFramework.xml
+C:\!Development\Push\Dev\Common\Concord\Logging\bin\Debug\EntityFramework.SqlServer.xml
+C:\!Development\Push\Dev\Common\Concord\Logging\obj\Debug\Logging.csprojResolveAssemblyReference.cache
+C:\!Development\Push\Dev\Common\Concord\Logging\obj\Debug\Concord.Logging.dll
+C:\!Development\Push\Dev\Common\Concord\Logging\obj\Debug\Concord.Logging.pdb

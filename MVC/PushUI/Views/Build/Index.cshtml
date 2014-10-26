@@ -1,0 +1,24 @@
+﻿@model PushUI.Models.Build.BuildManagerViewModel
+
+@{
+	ViewBag.Title = "Build and Release";
+}
+@section scripts
+{   
+	<script src="@Url.Content("~/Scripts/PushUI/controllers/pushUI.build.query.js")" type="text/javascript"></script>
+}
+@section featured {
+	<section class="featured">
+		<div class="content-wrapper">
+			<hgroup class="title">
+				<h1>@ViewBag.Title.</h1>
+				<h2>@ViewBag.Message</h2>
+			</hgroup>
+			<p>
+				View and Manage Builds across all Team Projects.
+			</p>
+		</div>
+	</section>
+}
+<h3>My Builds</h3>
+@{ Html.RenderPartial("List", Model.BuildQueryViewModel); }

@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Common\Concord\Push\Business\Business.csproj", "{0C7BF2D2-6F1E-4A08-BE7C-EFD678866C64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Common\Concord\Push\Data\Data.csproj", "{5EFFDD90-39E0-4868-AF91-2D5F72A030C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Common\Concord\Push\Models\Models.csproj", "{5A72D810-7CED-47DC-ABCD-85B065E57B07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A5CF24E-D17A-4AA4-A1F4-1F1822902174}"
+	ProjectSection(SolutionItems) = preProject
+		DefaultTestSettings.testsettings = DefaultTestSettings.testsettings
+		PushUI.vsmdi = PushUI.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Common\Concord\Push\Service\Service.csproj", "{1057441B-30B9-4635-8936-30D45509324A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Common\Concord\Logging\Logging.csproj", "{19A599A6-82E0-48D1-8C4B-B0E1C398B35C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushUI", "MVC\PushUI\PushUI.csproj", "{0DD87F9E-DB6B-40DC-B7EF-2D63A4C65593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushUI.Tests", "MVC\PushUI.Tests\PushUI.Tests.csproj", "{1EF759DF-B409-47CF-8384-5621883449D1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/concord
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Common\\Concord\\Logging\\Logging.csproj
+		SccProjectName1 = Common/Concord/Logging
+		SccLocalPath1 = Common\\Concord\\Logging
+		SccProjectUniqueName2 = Common\\Concord\\Push\\Business\\Business.csproj
+		SccProjectName2 = Common/Concord/Push/Business
+		SccLocalPath2 = Common\\Concord\\Push\\Business
+		SccProjectUniqueName3 = Common\\Concord\\Push\\Data\\Data.csproj
+		SccProjectName3 = Common/Concord/Push/Data
+		SccLocalPath3 = Common\\Concord\\Push\\Data
+		SccProjectUniqueName4 = Common\\Concord\\Push\\Models\\Models.csproj
+		SccProjectName4 = Common/Concord/Push/Models
+		SccLocalPath4 = Common\\Concord\\Push\\Models
+		SccProjectUniqueName5 = Common\\Concord\\Push\\Service\\Service.csproj
+		SccProjectName5 = Common/Concord/Push/Service
+		SccLocalPath5 = Common\\Concord\\Push\\Service
+		SccProjectUniqueName6 = MVC\\PushUI.Tests\\PushUI.Tests.csproj
+		SccProjectName6 = MVC/PushUI.Tests
+		SccLocalPath6 = MVC\\PushUI.Tests
+		SccProjectUniqueName7 = MVC\\PushUI\\PushUI.csproj
+		SccProjectName7 = MVC/PushUI
+		SccLocalPath7 = MVC\\PushUI
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = PushUI.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C7BF2D2-6F1E-4A08-BE7C-EFD678866C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7BF2D2-6F1E-4A08-BE7C-EFD678866C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7BF2D2-6F1E-4A08-BE7C-EFD678866C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7BF2D2-6F1E-4A08-BE7C-EFD678866C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EFFDD90-39E0-4868-AF91-2D5F72A030C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFFDD90-39E0-4868-AF91-2D5F72A030C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFFDD90-39E0-4868-AF91-2D5F72A030C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFFDD90-39E0-4868-AF91-2D5F72A030C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A72D810-7CED-47DC-ABCD-85B065E57B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A72D810-7CED-47DC-ABCD-85B065E57B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A72D810-7CED-47DC-ABCD-85B065E57B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A72D810-7CED-47DC-ABCD-85B065E57B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1057441B-30B9-4635-8936-30D45509324A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1057441B-30B9-4635-8936-30D45509324A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1057441B-30B9-4635-8936-30D45509324A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1057441B-30B9-4635-8936-30D45509324A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A599A6-82E0-48D1-8C4B-B0E1C398B35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A599A6-82E0-48D1-8C4B-B0E1C398B35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A599A6-82E0-48D1-8C4B-B0E1C398B35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A599A6-82E0-48D1-8C4B-B0E1C398B35C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD87F9E-DB6B-40DC-B7EF-2D63A4C65593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD87F9E-DB6B-40DC-B7EF-2D63A4C65593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD87F9E-DB6B-40DC-B7EF-2D63A4C65593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD87F9E-DB6B-40DC-B7EF-2D63A4C65593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF759DF-B409-47CF-8384-5621883449D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF759DF-B409-47CF-8384-5621883449D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF759DF-B409-47CF-8384-5621883449D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF759DF-B409-47CF-8384-5621883449D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

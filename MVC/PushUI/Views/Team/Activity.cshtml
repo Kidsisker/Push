@@ -1,0 +1,42 @@
+﻿@using Concord.Push.Models.Team
+@using Newtonsoft.Json
+@using PushUI.Models.Team
+@model ActivityViewModel
+@{
+	ViewBag.Title = "Team Activities";
+}
+
+<h3>Get started with Concord PUSH tools:</h3>
+@using (Html.BeginForm())
+{
+	<div id="pushUiTeamActivity" ng-controller="TeamActivityCtrl" ng-init="init(@Html.Raw(JsonConvert.SerializeObject(new JsonActivityRequest(Model)).Replace("\"","'")))">
+		<ol class="round">
+			<li class="one">
+				<h4>Select a Project</h4>
+				<select ng-model="viewModel.project" ng-options="p.name for p in viewModel.projects"></select>
+			</li>
+			<li class="two">
+				<h4>Merge</h4>
+				<div ng-repeat="activity in viewModel.project.activities | orderBy:'sequence' | filter: { type.category: @((int)ActivityCategory.Merge) }">
+					<h5><a href="{{activity.route}}">{{activity.name}}</a></h5>
+				</div>
+			</li>
+			<li class="three">
+				<h4>Build and Release</h4>
+				<div ng-repeat="activity in viewModel.project.activities | orderBy:'sequence' | filter: { type.category: @((int)ActivityCategory.Build) }">
+					<h5><a href="{{activity.route}}">{{activity.name}}</a></h5>
+				</div>
+			</li>
+			<li class="four">
+				<h4>More Tools - Coming Soon!</h4>
+				<button type="submit" class="btn btn-primary">Coming SOON</button>
+			</li>
+		</ol>
+	</div>
+}
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		angular.bootstrap($('#pushUiTeamActivity'), ['teamActivityUiApp']);
+	});
+</script>

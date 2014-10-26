@@ -1,0 +1,16 @@
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\Concord.Push.Business.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\Concord.Push.Business.pdb
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\Concord.Push.Data.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\Concord.Push.Models.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\Concord.Push.Service.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Client.DataStoreLoader.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\Concord.Push.Data.pdb
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\Concord.Push.Models.pdb
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\Concord.Push.Service.pdb
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\Microsoft.WITDataStore.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\!Development\Push\Dev\Common\Concord\Push\Business\obj\Debug\Concord.Push.Business.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Business\obj\Debug\Concord.Push.Business.pdb
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\RedGate.SQLCompare.Engine.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\RedGate.Shared.Utils.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Business\bin\Debug\RedGate.Shared.SQL.dll

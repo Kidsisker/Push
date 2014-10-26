@@ -1,0 +1,16 @@
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Concord.Push.Data.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Concord.Push.Data.pdb
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Concord.Logging.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Concord.Push.Models.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Concord.Push.Service.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\EntityFramework.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Elmah.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Client.DataStoreLoader.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Concord.Logging.pdb
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Concord.Push.Models.pdb
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Concord.Push.Service.pdb
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\EntityFramework.xml
+C:\!Development\Push\Dev\Common\Concord\Push\Data\bin\Debug\Microsoft.WITDataStore.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\!Development\Push\Dev\Common\Concord\Push\Data\obj\Debug\Concord.Push.Data.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Data\obj\Debug\Concord.Push.Data.pdb

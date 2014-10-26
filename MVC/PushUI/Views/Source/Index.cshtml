@@ -1,0 +1,104 @@
+﻿@using Newtonsoft.Json
+@using PushUI.Models.Source
+@using PushUI.Models.Tracking
+@model MergeViewModel
+
+@{
+	ViewBag.Title = "Index";
+}
+
+@section scripts
+{   
+	<script src="@Url.Content("~/Scripts/PushUI/controllers/pushUI.source.merge.js")" type="text/javascript"></script>
+}
+
+<h2>Merge</h2>
+
+<div id="pushUiMergeIndex" ng-controller="MergeCtrl" ng-init="init(@Html.Raw(JsonConvert.SerializeObject(new JsonMergeRequest(Model)).Replace("\"","'")))">
+	<form>
+		<ol class="round">
+			<li class="one">
+				<fieldset>
+					<legend>Select Team Project</legend>
+					<select ng-model="viewModel.project" ng-options="p.name for p in viewModel.projects"></select>
+				</fieldset>
+			</li>
+			<li class="two">
+				<fieldset>
+					<legend>Select Source Environment</legend>
+					<div ng-repeat="e in viewModel.project.environments">
+						<input type="radio" name="source" ng-model="viewModel.environment.source" ng-value="e.source" ng-disabled="true" />{{e.source.name}}<br/>
+					</div>
+				</fieldset>
+			</li>
+			<li class="three">
+				<fieldset>
+					<legend>Select Target Environment</legend>
+					<div ng-repeat="e in viewModel.project.environments | filter: { source.value: viewModel.environment.source.value }">
+						<input type="radio" name="target" ng-model="viewModel.environment.target" ng-value="e.target" ng-disabled="true" />{{e.target.name}}<br/>
+					</div>
+				</fieldset>
+			</li>
+			<li class="four">
+				<fieldset>
+					<legend>Select Work Items for Merge Consideration</legend>
+						<input type="radio" name="mergeMethod" ng-model="viewModel.mergeMethodOption.method" value="@((int)WorkItemQueryMethod.State)" />State
+						<select ng-model="viewModel.mergeMethodOption.methodValue" ng-options="state for state in viewModel.environment.states"></select><br />
+					<br/>
+					<div>
+						<button type="button" class="btn btn-primary" ng-disabled="!viewModel.mergeMethodOption.method" ng-click="getWorkItems()">Get Work Items</button>
+						<span ng-show="workItems">Total: <strong>{{workItems.length}}</strong></span>
+					</div>
+					<div ui-grid="gridWorkItems" ui-grid-resize-columns></div>
+				</fieldset>
+			</li>
+			<li class="five">
+				<fieldset>
+					<legend>Merge Changesets</legend>
+					@*<label>Task Title</label><input type="text" ng-model="mergeTaskTitle"/><br/>*@
+					<div>
+						<button type="button" class="btn btn-primary" ng-disabled="!workItems || workItems.length <=0" ng-click="getChangesets()">Get Changesets</button>
+						<span ng-show="workItems">Total: {{changesets.length}}</span>
+					</div>
+					<div ui-grid="gridChangesets" ui-grid-resize-columns external-scopes="$scope"></div>
+					<button type="button" class="btn btn-primary" ng-disabled="!changesets || changesets.length <=0" ng-click="mergeChangeset(0)">Merge</button>&nbsp;
+					<input type="checkbox" ng-model="viewModel.autoCommit"/><label>Auto Commit</label>
+				</fieldset>
+			</li>
+			<li class="six">
+				<fieldset>
+					<legend>Evaluate Remaining Merge Candidates</legend>
+					<div>
+						<button type="button" class="btn btn-primary" ng-click="getMergeCandidates()">Get Candidates</button>
+						<span ng-show="mergeCandidates">Total: {{mergeCandidates.length}}</span>
+					</div>
+					<div ui-grid="gridCandidates" ui-grid-resize-columns></div>
+				</fieldset>
+			</li>
+			<li class="seven">
+				<fieldset>
+					<legend>Evaluate Changesets for Migration Scripts</legend>
+					<div>
+						<button type="button" class="btn btn-primary" ng-disabled="!workItems || workItems.length <=0" ng-click="getMigrationScripts()">Get Work Items</button>
+						<span ng-show="mergeTasks">Total: {{mergeTasks.length}}</span>
+					</div>
+					<div ui-grid="gridMergeTasks" ui-grid-resize-columns></div>
+				</fieldset>
+			</li>
+			<li class="eight">
+				<fieldset>
+					<legend>Build and Release</legend>
+					<div>
+						<button type="button" class="btn btn-primary" ng-click="buildEnvironment()">Build</button>
+					</div>
+				</fieldset>
+			</li>
+		</ol>
+	</form>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		angular.bootstrap($('#pushUiMergeIndex'), ['mergeUiApp']);
+	});
+</script>

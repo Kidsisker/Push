@@ -1,0 +1,14 @@
+﻿@using Newtonsoft.Json
+@using PushUI.Models.Build
+@model BuildQueryViewModel
+
+<div id="pushUiBuildQueryList" ng-controller="BuildQueryCtrl" ng-init="init(@Html.Raw(JsonConvert.SerializeObject(new JsonBuildQueryRequest(Model)).Replace("\"","'")))">
+	<div ui-grid="gridResults" ui-grid-resize-columns></div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+	    angular.bootstrap($('#pushUiBuildQueryList'), ['buildQueryUiApp']);
+	});
+</script>
+

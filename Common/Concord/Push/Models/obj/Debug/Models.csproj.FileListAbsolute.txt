@@ -1,0 +1,5 @@
+C:\!Development\Push\Dev\Common\Concord\Push\Models\bin\Debug\Concord.Push.Models.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Models\bin\Debug\Concord.Push.Models.pdb
+C:\!Development\Push\Dev\Common\Concord\Push\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\!Development\Push\Dev\Common\Concord\Push\Models\obj\Debug\Concord.Push.Models.dll
+C:\!Development\Push\Dev\Common\Concord\Push\Models\obj\Debug\Concord.Push.Models.pdb

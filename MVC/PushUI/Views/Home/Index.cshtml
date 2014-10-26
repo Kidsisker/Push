@@ -1,0 +1,21 @@
+﻿@{
+	ViewBag.Title = "Welcome to Concord PUSH";
+}
+@section scripts
+{   
+	<script src="@Url.Content("~/Scripts/PushUI/controllers/pushUI.team.activity.js")" type="text/javascript"></script>
+}
+@section featured {
+	<section class="featured">
+		<div class="content-wrapper">
+			<hgroup class="title">
+				<h1>@ViewBag.Title.</h1>
+				<h2>@ViewBag.Message</h2>
+			</hgroup>
+			<p>
+				This project has been developed to provide an interface for the automation of many tools necessary for Concord software development, especialy those tasks related to Release Management.
+			</p>
+		</div>
+	</section>
+}
+@{ Html.RenderAction("Activity", "Team"); }
